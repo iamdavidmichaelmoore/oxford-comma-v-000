@@ -17,4 +17,5 @@ def oxford_comma(array)
     string = "#{array_commafied}, and #{last_element}"
   end
   string
+  puts array_commafied
 end
