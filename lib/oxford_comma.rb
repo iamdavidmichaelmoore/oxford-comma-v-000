@@ -10,7 +10,7 @@ def oxford_comma(array)
     array_commafied = array_excluding_last_element.join(", ")
     last_element = array.last
     string = "#{array_commafied}, and #{last_element}"
-  elsif array_length >= 4
+  elsif array_length > 3
     array_excluding_last_element = array.take(array_length - 1)
     array_commafied = array_excluding_last_element.join(", ")
     last_element = array.last
