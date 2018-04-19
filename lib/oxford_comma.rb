@@ -11,6 +11,6 @@ def oxford_comma(array)
     array_excluding_last_element = array.take(array_length-1)
     array_commafied = array_excluding_last_element.join(", ")
     last_element = array.last
-    "#{array_commafied}"#{}", and #{last_element}"
+    "#{array_commafied}, and #{last_element}"
   end
 end
