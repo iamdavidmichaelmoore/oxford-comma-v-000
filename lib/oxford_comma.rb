@@ -6,13 +6,15 @@ def oxford_comma(array)
   elsif array_length == 2
     string = array.join(" and ")
   elsif array_length = 3
-    array_commafied = array.join(", ")
-    string = "#{array_commafied}, and"
+    array_excluding_last_element = array.take(array_length - 1)
+    array_commafied = array_excluding_last_element.join(", ")
+    last_element = array.last
+    string = "#{array_commafied}, and #{last_element}"
   elsif array_length > 3
     array_excluding_last_element = array.take(array_length - 1)
     array_commafied = array_excluding_last_element.join(", ")
     last_element = array.last
-    string =  "#{array_commafied}, and #{last_element}"
+    string = "#{array_commafied}, and #{last_element}"
   end
   string
 end
