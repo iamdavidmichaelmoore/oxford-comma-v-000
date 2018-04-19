@@ -9,4 +9,5 @@ def oxford_comma(array)
     array_commified = array_excluding_last_element.join(",")
     last_element = array.last
     "#{array_commified}, and #{last_element}"
+  end
 end
